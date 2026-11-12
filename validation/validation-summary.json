@@ -1,0 +1,41 @@
+{
+  "release_state": "PASS_WITH_LIMITATIONS",
+  "date": "2026-11-12",
+  "python": "3.12.10",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 33,
+    "passed": 33
+  },
+  "evidence_validation": {
+    "ecdsa_p256_signature": "PASS",
+    "hmac_input_and_output_commitments": "PASS",
+    "independent_replay_verification": "PASS",
+    "receipt_hash_chain": "PASS",
+    "signed_merkle_manifest_and_inclusion_proofs": "PASS",
+    "private_key_and_payload_not_in_receipt": "PASS"
+  },
+  "cli_smoke_test": {
+    "command": "python demo.py examples/roi_input.json",
+    "exit_code": 0,
+    "output_matches_expected": true,
+    "encoding": "UTF-8"
+  },
+  "limitations": [
+    "Sem integração ADK, BigQuery, RAG ou Gemini Enterprise",
+    "Sem deployment ou validação em Google Cloud",
+    "Sem KMS/HSM, rotação, revogação, trusted timestamp ou âncora imutável",
+    "Zero-persistence do host não é garantido; o operador fornece os arquivos e chaves",
+    "Dados fictícios; ROI simples, sem desconto temporal",
+    "Python 3.10+; execução local verificada em Python 3.12.10. A matriz do GitHub Actions ainda depende da publicação do repositório",
+    "PDFs originais fornecidos pelo usuário são ignorados pelo Git; revisar direitos antes de qualquer redistribuição"
+  ],
+  "checks": {
+    "markdown_structural_checks": "PASS",
+    "original_pdf_byte_fidelity": "PASS",
+    "source_pdf_visual_inspection": "PASS",
+    "json_parseability": "PASS",
+    "claim_review": "PASS_WITH_LIMITATIONS"
+  }
+}

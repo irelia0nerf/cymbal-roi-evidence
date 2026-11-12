@@ -1,0 +1,18 @@
+id,claim,evidence,state,scope,owner,date,limitation
+C01,"Gemini Enterprise integra pesquisa, assistente e agentes",S1,documented,produto Google,Google,2026-11-12,Disponibilidade varia com configuração
+C02,Core Assistant é o agente padrão,S2;S3,documented,produto Google,Google,2026-11-12,Não é agente personalizado deste pacote
+C03,Google oferece agentes prontos e integra agentes personalizados,S2;S4,documented,produto Google,Google,2026-11-12,Edição e habilitação administrativa
+C04,Agent Garden e ADK apoiam construção de agentes,S5,documented,plataforma Google,Google,2026-11-12,Sem agente ADK implementado neste pacote
+C05,Agent Engine é chamado Agent Runtime na documentação atual,S6,documented,nomenclatura,Google,2026-11-12,Não comprova compatibilidade de SDK
+C06,RAG reduz alucinações,S7,documented,grounding,Google,2026-11-12,Não garante verdade ou cálculo exato
+C07,VPC Service Controls mitiga exfiltração em serviços protegidos,S8,documented,perímetro Google Cloud,Google,2026-11-12,Não bloqueia sozinho APIs externas
+C08,Calculadora financeira local usa Decimal,roi_model.py,implemented,exemplo local,Alex Bolson / FoundLab,2026-11-12,Sem aprovação financeira externa
+C09,"33 testes locais passaram, incluindo cálculos, CLI, assinatura, hash chain e Merkle",tests/test_roi.py;tests/test_evidence.py;tests/test_merkle.py;validation/test-results.txt,tested,exemplo local,Alex Bolson / FoundLab,2026-11-12,Execução em Python 3.12.10; sem testes Google Cloud ou multiusuário
+C10,Cenários demonstrativos são fictícios,examples/roi_input.json,documented,exemplo local,Alex Bolson / FoundLab,2026-11-12,Sem dados de clientes ou cálculo proprietário
+C11,"Fluxo ADK, BigQuery, RAG e aprovação é proposto",docs/03-arquitetura.md,documented,design,Alex Bolson / FoundLab,2026-11-12,Não implantado nem observado
+C12,"Recibos locais não provam veracidade da fonte, identidade jurídica, horário confiável ou zero-persistence do host",docs/09-modelo-de-ameacas.md,documented,limite de implementação,Alex Bolson / FoundLab,2026-11-12,Chaves e host permanecem fora do controle do pacote
+C13,"Recibos comprometem entrada e saída com HMAC e assinam o envelope com ECDSA P-256",evidence.py;tests/test_evidence.py,implemented,prova local,Alex Bolson / FoundLab,2026-11-12,Sem KMS/HSM; o fingerprint da chave precisa ser confiado fora de banda
+C14,"Verificação de cadeia detecta elo anterior inválido e reexecuta os compromissos",evidence.py;tests/test_evidence.py,implemented,prova local,Alex Bolson / FoundLab,2026-11-12,Truncamento final exige ancoragem externa da cabeça
+C15,"Manifesto Merkle assinado permite verificar inclusão de recibos",merkle.py;tests/test_merkle.py;tests/test_evidence.py,implemented,lote local,Alex Bolson / FoundLab,2026-11-12,A raiz precisa de ancoragem externa contra rollback
+C16,"Recibos não carregam o payload nem a saída numérica",evidence.py;tests/test_evidence.py,implemented,privacidade do artefato,Alex Bolson / FoundLab,2026-11-12,HMAC não é anonimização; quem possui a chave verifica ou cria compromissos
+C17,"Verificador compara fingerprint confiável, assinatura, HMAC e replay financeiro",evidence.py;evidence_cli.py;tests/test_evidence.py,implemented,verificação local,Alex Bolson / FoundLab,2026-11-12,Verificação depende do JSON original e da chave HMAC

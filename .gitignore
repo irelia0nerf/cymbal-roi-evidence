@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local credentials and environment configuration.
+.env
+.env.*
+!.env.example
+
+# Material de referência fornecido pelo usuário: confirme os direitos antes de publicar.
+sources/*.pdf
+
+# Local signing and commitment keys must never enter source control.
+*.key
+*-private.pem
+
+# Local evidence outputs may contain sensitive operational metadata.
+*.receipt.json
+*.manifest.json
+
+# Internal preparation checks; publish the consolidated summary and test log instead.
+validation/gate-*.json
+validation/visual-*.json

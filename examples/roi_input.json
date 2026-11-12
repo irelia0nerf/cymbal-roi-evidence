@@ -1,0 +1,23 @@
+{
+  "currency": "BRL",
+  "assumptions": [
+    "Dados inteiramente fictícios; nenhuma tabela real da Cymbal Labs foi consultada.",
+    "Benefícios representam contribuição econômica incremental frente ao cenário de referência.",
+    "Fluxo líquido uniforme dentro de cada ano para interpolação do payback.",
+    "Sem impostos, inflação, financiamento ou desconto temporal."
+  ],
+  "scenarios": [
+    {
+      "name": "Configuração A",
+      "initial_investment": "1000000.00",
+      "annual_benefits": ["700000.00", "700000.00", "700000.00"],
+      "annual_operating_costs": ["200000.00", "200000.00", "200000.00"]
+    },
+    {
+      "name": "Configuração B",
+      "initial_investment": "1200000.00",
+      "annual_benefits": ["850000.00", "850000.00", "850000.00"],
+      "annual_operating_costs": ["250000.00", "250000.00", "250000.00"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+test_broken_hash_chain_is_rejected (test_evidence.EvidenceReceiptTest.test_broken_hash_chain_is_rejected) ... ok
+test_changed_input_fails_commitment_verification (test_evidence.EvidenceReceiptTest.test_changed_input_fails_commitment_verification) ... ok
+test_cli_issue_and_independent_verify (test_evidence.EvidenceReceiptTest.test_cli_issue_and_independent_verify) ... ok
+test_hash_chain_verifies_order_and_links (test_evidence.EvidenceReceiptTest.test_hash_chain_verifies_order_and_links) ... ok
+test_modified_receipt_signature_fails (test_evidence.EvidenceReceiptTest.test_modified_receipt_signature_fails) ... ok
+test_non_p256_key_is_rejected (test_evidence.EvidenceReceiptTest.test_non_p256_key_is_rejected) ... ok
+test_object_key_order_does_not_change_commitment (test_evidence.EvidenceReceiptTest.test_object_key_order_does_not_change_commitment) ... ok
+test_receipt_contains_commitments_not_payload_values (test_evidence.EvidenceReceiptTest.test_receipt_contains_commitments_not_payload_values) ... ok
+test_signed_receipt_replays_against_original_input (test_evidence.EvidenceReceiptTest.test_signed_receipt_replays_against_original_input) ... ok
+test_wrong_commitment_key_or_id_fails (test_evidence.EvidenceReceiptTest.test_wrong_commitment_key_or_id_fails) ... ok
+test_wrong_trusted_signing_key_fails (test_evidence.EvidenceReceiptTest.test_wrong_trusted_signing_key_fails) ... ok
+test_duplicate_and_empty_batches_are_rejected (test_merkle.MerkleManifestTest.test_duplicate_and_empty_batches_are_rejected) ... ok
+test_receipt_not_in_manifest_is_rejected (test_merkle.MerkleManifestTest.test_receipt_not_in_manifest_is_rejected) ... ok
+test_signed_manifest_and_all_odd_batch_proofs_verify (test_merkle.MerkleManifestTest.test_signed_manifest_and_all_odd_batch_proofs_verify) ... ok
+test_single_and_even_batch_proofs_verify (test_merkle.MerkleManifestTest.test_single_and_even_batch_proofs_verify) ... ok
+test_tampered_or_untrusted_manifest_is_rejected (test_merkle.MerkleManifestTest.test_tampered_or_untrusted_manifest_is_rejected) ... ok
+test_tampered_proof_is_rejected (test_merkle.MerkleManifestTest.test_tampered_proof_is_rejected) ... ok
+test_break_even (test_roi.ROITest.test_break_even) ... ok
+test_cli_missing_file_no_payload (test_roi.ROITest.test_cli_missing_file_no_payload) ... ok
+test_currency_and_unknown_fields_rejected (test_roi.ROITest.test_currency_and_unknown_fields_rejected) ... ok
+test_different_scenario_horizons_rejected (test_roi.ROITest.test_different_scenario_horizons_rejected) ... ok
+test_does_not_mutate_input_or_decimal_context (test_roi.ROITest.test_does_not_mutate_input_or_decimal_context) ... ok
+test_duplicate_json_keys_rejected (test_roi.ROITest.test_duplicate_json_keys_rejected) ... ok
+test_duplicate_names_rejected (test_roi.ROITest.test_duplicate_names_rejected) ... ok
+test_example_cli_matches_expected (test_roi.ROITest.test_example_cli_matches_expected) ... ok
+test_fractional_payback_and_rounding (test_roi.ROITest.test_fractional_payback_and_rounding) ... ok
+test_horizon_mismatch_rejected (test_roi.ROITest.test_horizon_mismatch_rejected) ... ok
+test_initial_loss_then_recovery (test_roi.ROITest.test_initial_loss_then_recovery) ... ok
+test_invalid_money_rejected (test_roi.ROITest.test_invalid_money_rejected) ... ok
+test_known_three_year_result (test_roi.ROITest.test_known_three_year_result) ... ok
+test_missing_assumptions_rejected (test_roi.ROITest.test_missing_assumptions_rejected) ... ok
+test_no_payback_and_negative_roi (test_roi.ROITest.test_no_payback_and_negative_roi) ... ok
+test_zero_investment_rejected (test_roi.ROITest.test_zero_investment_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.893s
+
+OK

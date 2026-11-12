@@ -1,0 +1,16 @@
+[
+  {
+    "original_name": "Introdução às Plataformas de Agentes do Google Cloud.pdf",
+    "pack_path": "sources/introducao-plataformas-agentes-google-cloud.pdf",
+    "sha256": "bef43064463ff2f77d5526e12526ada14d308bfb1a650f9735e6891bdfc9e0ad",
+    "pages": 1,
+    "modification": "none; filename changed only"
+  },
+  {
+    "original_name": "Introdução a agentes no Google Cloud - Visão geral do módulo | Google Skills.pdf",
+    "pack_path": "sources/introducao-agentes-visao-geral-google-skills.pdf",
+    "sha256": "7daf17aca8d66d374dc62dba2fcc6a6f7cb4fa226403247159999b75b183a3bc",
+    "pages": 1,
+    "modification": "none; filename changed only"
+  }
+]
