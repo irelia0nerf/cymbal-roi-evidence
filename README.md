@@ -198,7 +198,9 @@ O workflow instala `requirements.txt` e executa a suíte em Python 3.10–3.14 n
 
 ## Publicação
 
-A Cymbal Labs e os números são fictícios. Os documentos e o código não representam uma integração aprovada pelo Google nem aconselhamento financeiro. Os recibos locais não substituem infraestrutura de chaves confiável, trilha imutável ou análise de segurança. Os PDFs fornecidos como referência são ignorados pelo Git; confirme os direitos de redistribuição antes de incluí-los manualmente em um repositório público. Nenhum arquivo de licença foi criado.
+A Cymbal Labs e os números são fictícios. Os documentos e o código não representam uma integração aprovada pelo Google nem aconselhamento financeiro. Os recibos locais não substituem infraestrutura de chaves confiável, trilha imutável ou análise de segurança. Os PDFs fornecidos como referência são ignorados pelo Git e não estão cobertos pela licença deste projeto; confirme os direitos de redistribuição antes de incluí-los manualmente.
+
+O código e a documentação originais deste projeto estão sob Apache-2.0; marcas e conteúdo de terceiros não estão incluídos. Consulte [LICENSE](LICENSE).
 
 ## Sobre mim
 
